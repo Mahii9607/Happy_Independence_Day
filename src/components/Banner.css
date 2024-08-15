@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Video in the background */
+}
+
+.banner-overlay {
+  position: relative;
+  z-index: 2; /* Overlay on top of video */
+  text-align: center;
+  color: white;
+  margin-top: 80px; /* Adjusted to move the text lower */
+}
+
+.banner h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem; /* Larger size  for emphasis */
+  
+
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+  letter-spacing: 2px; /* Spacing for a more airy feel */
+}
